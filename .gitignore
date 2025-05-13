@@ -1,0 +1,14 @@
+  //.gitignore
+
+/node_modules
+
+temp/
+uploads/
+
+.env
+
+.vscode
+.DS_Store
+.idea
+/dist
+service-account.json
