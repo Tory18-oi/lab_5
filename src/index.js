@@ -35,10 +35,11 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://lab-4-two.vercel.app",
     credentials: true,
   })
 );
+
 
 app.get("/applications", authorize, async (req, res) => {
   try {
