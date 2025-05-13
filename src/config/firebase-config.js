@@ -3,8 +3,7 @@ import { readFileSync } from "fs";
 import path from "path";
 
 // Оновлений шлях до файлу
-const mode = "DEVELOPMENT";
-
+const mode = process.env.NODE_ENV;
 const serviceAccountPath = path.resolve(
   mode === "DEVELOPMENT"
     ? "./src/config/service-account.json"
